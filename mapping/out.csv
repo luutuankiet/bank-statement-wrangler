@@ -1,0 +1,13 @@
+bank_name,original_column,new_column
+scb,Ngày hiệu lực,Date
+scb,Nội dung,Memo
+scb,Số tiền rút,Outflow
+scb,Số tiền gửi,Inflow
+tcb,NGAY,Date
+tcb,DIEN GIAI,Memo
+tcb,NO,Outflow
+tcb,CO,Inflow
+vcb,Ngày/,Date
+vcb,Nội dung chi tiết/,Memo
+vcb,Số tiền ghi nợ/,Outflow
+vcb,Số tiền ghi có/,Inflow

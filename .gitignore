@@ -1,0 +1,7 @@
+.DS_Store
+in/*
+out/*
+format/*
+!in/.gitkeep
+!out/.gitkeep
+!format/.gitkeep
