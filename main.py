@@ -72,6 +72,10 @@ for _, row in mapping_df.iterrows():
     # Apply column transformations based on the column mapping
     bank_column_mapping = column_mapping_df[column_mapping_df['bank_name'] == bank_name]
     rename_dict = dict(zip(bank_column_mapping['original_column'], bank_column_mapping['new_column']))
+    # handle when the column's dropped cause no value i.e. scb got no income
+    for col in rename_dict.keys():
+        if col not in df.columns:
+            df[col] = ''
     df = df.rename(columns=rename_dict)
 
     # Add missing columns and reorder
